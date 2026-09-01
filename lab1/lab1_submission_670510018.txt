@@ -1,0 +1,19 @@
+===BEGIN LAB1 SUBMISSION===
+student_id: 670510018
+timestamp: 2026-09-01T16:06:27Z
+hostname: ubuntu
+---[user: getent passwd]---
+hiro503:x:1001:1002::/home/hiro503:/bin/sh
+---[group: getent group]---
+support:x:1002:
+---[user-in-group: id]---
+uid=1001(hiro503) gid=1002(support) groups=1002(support)
+---[file stat: home file mode/owner]---
+/home/hiro503/report_8313.txt mode=600 owner=hiro503 group=support
+---[sshd effective config]---
+port 2527
+permitrootlogin no
+passwordauthentication no
+---[integrity]---
+sshd_sha256: 6f5b0738155937f783ba8881cc1bf45635d680db844cf6edb70975b3599463da
+===END LAB1 SUBMISSION===
