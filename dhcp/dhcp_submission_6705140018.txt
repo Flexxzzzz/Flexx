@@ -1,9 +1,11 @@
 ===BEGIN DHCP SUBMISSION===
 student_id: 6705140018
-timestamp: 2026-09-22T19:16:27Z
+timestamp: 2026-09-23T07:16:01Z
 hostname: ubuntu
 ---[dhcpd.conf]---
 default-lease-time 86400;
+max-lease-time 86400;
+authoritative;
 
 subnet 192.168.105.0 netmask 255.255.255.0 {
     range 192.168.105.94 192.168.105.194;
@@ -25,9 +27,7 @@ Config file: /etc/dhcp/dhcpd.conf
 Database file: /var/lib/dhcp/dhcpd.leases
 PID file: /var/run/dhcpd.pid
 ---[service status]---
-failed
-inactive
-inactive/unknown
+active
 ---[integrity]---
-conf_sha256: bf79ef251810a581cb32dac8b4f14d5e6c7654acb2ab8436f540eb7925550eeb
+conf_sha256: b9e872f13a270ba97e2a1d244c3ff013145a9dab9eff093872c49f0975c6bf10
 ===END DHCP SUBMISSION===
